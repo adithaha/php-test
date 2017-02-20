@@ -1,5 +1,9 @@
 <?php
-$mysqli = new mysqli("mysql:3306", "joao", "4w2t7ovn1eM5t6WT", "test_db");
+$dbhost = getenv('DATABASE_SERVICE_NAME');
+$dbuser = getenv('MYSQL_USER');
+$dbpass = getenv('MYSQL_PASSWORD');
+
+$mysqli = new mysqli("$dbhost:3306", "$dbuser", "$dbpass", "test_db");
 
 /* check connection */
 if (mysqli_connect_errno()) {
