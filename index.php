@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<h1>PHP Application Rules!</h1>
+<h1>JAVA Application Rules!</h1>
 
 <p>
     <a href=phpinfo.php>phpinfo</a>
