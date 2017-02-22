@@ -1,49 +1,55 @@
 <html>
 <head>
-    <title>#LiveMasterTech 2</title> 
+    <title>Getup On The Road</title> 
 </head>
-<body>
+<body background="back.jpg">
+<h1 style="text-align: center;">PHP Test Application!</h1>
 
-<h1>JAVA Application Rules!</h1>
+<hr />
+<p style="text-align: center;"><a href="phpinfo.php" target="_self">​<input name="phpinfo.php" type="button" value="Info PHP" />​</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="myvars.php" target="_self"><input name="myvars.php" type="button" value="Env Vars" /></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="myvars.php" target="_self">​</a><a href="host.php" target="_self"><input name="host.php" type="button" value="Hostname" /></a><a href="host.php" target="_self">​</a></p>
 
-<p>
-    <a href=phpinfo.php>phpinfo</a>
-</p>
+<p>&nbsp;</p>
 
-<p>
-    <a href=myvars.php>AMBIENTE</a>
-</p>
+<hr />
+<p>&nbsp;</p>
 
-<p>
-    <a href=host.php>hostname</a>
-</p>
+<h1 style="text-align: center;">Other Test Functions:</h1>
 
-<p>
-    <form method=get action=echo.php>
-        <input type=submit value="Echo"/> <input type=text name="text" value="Some text here"/>
-    </form>
-</p>
+<p>&nbsp;</p>
 
-<p>
-    <form method=get action=env.php>
-        <input type=submit value="Env var"/> <input type=text name="var" value="Env var name"/>
-    </form>
-</p>
+<form action="echo.php" method="get">
+<p style="text-align: center;"><input name="text" type="text" value="Some text here" /><input type="submit" value="Show My Text" />&nbsp;</p>
+</form>
 
-<p>
-    <form method=get action=fibonacci.php>
-        <input type=submit value="Fibonacci"/> <input type=text name="value" value="5"/>
-    </form>
-</p>
+<p style="text-align: center;">&nbsp;</p>
 
-<p>
-    <form method=get action=log.php>
-        <input type=submit value="Logger"/> <input type=text name="lines" value="100"/>
-    </form>
-</p>
+<p style="text-align: center;">&nbsp;</p>
 
-<hr>
-Version: <a href="version.php"><?php include 'version.php'; ?></a>
+<form action="env.php" method="get">
+<p style="text-align: center;"><input name="var" type="text" value="Env Var Name" /><input type="submit" value="Show My Var Value" /> &nbsp;</p>
+</form>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<form action="fibonacci.php" method="get">
+<p style="text-align: center;"><input name="value" type="text" value="10" /><input type="submit" value="Calc Fibonacci!" /> &nbsp;</p>
+</form>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<form action="log.php" method="get">
+<p style="text-align: center;"><input type="submit" value="Hit my URL" /> <input name="lines" type="text" value="100" />&nbsp;</p>
+</form>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<hr />
+<p>Version: <a href="version.php"><!--?php include 'version.php'; ?--></a></p>
+
 
 </body>
 </html>
