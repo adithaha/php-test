@@ -1,3 +1,3 @@
 <?php
-echo "echo: " . $_GET["text"] . "\n";
+echo "Your Text: " . $_GET["text"] . "\n";
 ?>

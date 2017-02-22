@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#ced7ed">
+<h1 style="text-align: center;">PHP Hits Test Application!</h1>
+<hr />
 <?php
 $url = 'http://' . (getenv('SERVICE') ?: 'php') . ':' . (getenv('PORT') ?: '8080') . '/empty?hit=';
 for ($i=1; $i<=$_GET['lines']; $i++) {
@@ -10,3 +15,6 @@ for ($i=1; $i<=$_GET['lines']; $i++) {
 ?>
 <p>
 <a href="<?php echo $_SERVER['HTTP_REFERER']; ?>">back</a>
+
+</body>
+</html>
