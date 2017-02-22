@@ -2,7 +2,7 @@
 <head>
     <title>Getup On The Road</title> 
 </head>
-<body background="back.jpg">
+<body bgcolor="#ced7ed">
 <h1 style="text-align: center;">PHP Test Application!</h1>
 
 <hr />
@@ -48,7 +48,7 @@
 <p style="text-align: center;">&nbsp;</p>
 
 <hr />
-<p>Version: <a href="version.php"><!--?php include 'version.php'; ?--></a></p>
+<p>Version: 2</p>
 
 
 </body>
