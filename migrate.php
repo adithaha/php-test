@@ -12,8 +12,9 @@ $TABLENAME = getenv('POSTGRESQL_TABLE');
 $dbconn = pg_connect("host=$DBHOST dbname=$DBNAME user=$DBUSER password=$DBPASS")
         or die('Could not connect: ' . pg_last_error());
 
-//perform the insert using pg_query
-$result = pg_query($dbconn, "INSERT INTO '$TABLENAME'(data) VALUES('$data')");
+//Create table
+$tabela = pg_query($dbconn, "CREATE TABLE IF NOT EXISTS '$TABLENAME'(DATA  TEXT  NOT NULL)";
+$permissao = pg_query($dbconn, "GRANT ALL ON '$TABLENAME' TO '$DBUSER';");
 
 // Closing connection
 pg_close($dbconn);
