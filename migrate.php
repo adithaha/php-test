@@ -5,7 +5,6 @@ $DBUSER = getenv('POSTGRESQL_USER');
 $DBPASS = getenv('POSTGRESQL_PASSWORD');
 $DBNAME = getenv('POSTGRESQL_DATABASE');
 
-$data = shell_exec('date');
 $TABLENAME = getenv('POSTGRESQL_TABLE');
 
 // Connecting, selecting database
