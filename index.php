@@ -2,7 +2,7 @@
 <head>
     <title>Getup On The Road</title> 
 </head>
-<body bgcolor="#ced7ed">
+<body background="http://www.globuscontainer.com/pub/images/upload_slides/slide3.jpg">
 <h1 style="text-align: center;">Application For Real!</h1>
 
 <hr />
