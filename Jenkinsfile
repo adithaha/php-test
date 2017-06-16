@@ -7,7 +7,7 @@ stage 'Checkout'
 
 
 if (env.BRANCH_NAME != 'master') {
-  stage 'Only on other branch's'
+  stage 'Only on other branchs'
     node () {
       println 'This happens only if not master'
   }
