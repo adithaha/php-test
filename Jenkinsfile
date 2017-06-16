@@ -8,7 +8,7 @@ stage 'Checkout'
 if (env.BRANCH_NAME != 'master') {
   stage 'Only on other branchs'
     node () {
-      println 'This happen only if not master'
+      println 'This happens only if not master'
       sh 'echo $branch'
   }
   
