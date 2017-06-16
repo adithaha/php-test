@@ -1,9 +1,8 @@
-#!/usr/bin/env groovy
 stage 'Checkout'
  node() {
   deleteDir()
   checkout scm
-  sh 'echo $BRANCH_NAME'
+  sh 'env'
 }
 
 
