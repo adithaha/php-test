@@ -2,6 +2,7 @@ stage 'Checkout'
  node() {
   deleteDir()
   checkout scm
+  sh 'export branch=`git rev-parse --abbrev-ref HEAD`'
   sh 'env'
 }
 
@@ -10,6 +11,7 @@ if (env.BRANCH_NAME != 'master') {
   stage 'Only on other branchs'
     node () {
       println 'This happens only if not master'
+      sh 'echo $branch'
   }
   
   stage 'Slack Notification'
