@@ -2,8 +2,6 @@ stage 'Checkout'
  node() {
   deleteDir()
   checkout scm
-  sh 'export branch=`git rev-parse --abbrev-ref HEAD`'
-  sh 'env'
 }
 
 
