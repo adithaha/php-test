@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy
 stage 'Checkout'
  node() {
   deleteDir()
